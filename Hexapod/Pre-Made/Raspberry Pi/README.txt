@@ -1,4 +1,0 @@
-Raspberry Pi 4 (Dummy with Fusion360 Files) by honeybadgerino on Thingiverse: https://www.thingiverse.com/thing:3778297
-
-Summary:
-A simple Raspberry Pi 4 B Model with original dimensions. This model can used as dummy for a modeling project. (like a rpi4 case)I created this by using the offical layout. - If you see any errors in the Fusion 360 file please contact me. Including:-STL file-STEP-Fuison360 FileChangelog:2022/01/19: Version 2 (v2)Thanks to your feedback, i changed a view things, i hope, it is helpful.added correct dimensions of HDMI, USB A and USB-C port(ports with bend edges are the size (height &amp; width) of the port with the edgescomponents are now fixed size and correct habe dimensions as in layout mounting holes have the right diameter of 2.7mmbaseplate: corners  are now tangentialadded .3mf fileInformation: All dimensions which are not included in the Raspberry Pi mechanical Drawing, i meassured myself.
