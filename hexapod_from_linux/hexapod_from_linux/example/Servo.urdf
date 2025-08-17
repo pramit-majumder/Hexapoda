@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="Servo">
+    <link name="servo_motor">
+        <inertial>
+            <origin xyz="-0.012941708402707537 -0.008918110283941134 1.676032819547209e-06" rpy="0.0 0.0 0.0" />
+            <mass value="0.056857679343396465" />
+            <inertia ixx="7.099578260925757e-06" iyy="1.2251090590462186e-05" izz="1.3784469134038866e-05" ixy="-1.9930741684232403e-08" iyz="8.656468527985264e-10" ixz="-1.4736854364819114e-09" />
+        </inertial>
+        <visual name="servo_motor_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/servo_motor.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="servo_motor_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/servo_motor.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+</robot>
