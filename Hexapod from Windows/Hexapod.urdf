@@ -1,0 +1,450 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="Hexapod">
+    <link name="ST3215-v6_ZK_122">
+        <inertial>
+            <origin xyz="-0.012872959021116648 -0.00769104231238467 4.083528206766486e-06" rpy="0.0 0.0 0.0" />
+            <mass value="0.02333262594566815" />
+            <inertia ixx="1.49996379247526e-06" iyy="5.095506425694643e-06" izz="4.250129261833994e-06" ixy="3.0912890320840328e-09" iyz="6.525183306614345e-10" ixz="-1.3873070242118467e-09" />
+        </inertial>
+        <visual name="ST3215-v6_ZK_122_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_ZK_122.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="ST3215-v6_ZK_122_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_ZK_122.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="ST3215-v6_SG-ZIJI_15">
+        <inertial>
+            <origin xyz="-0.011997414779678585 0.0018856841871135509 -1.4120169437336006e-06" rpy="0.0 0.0 0.0" />
+            <mass value="0.013957938251507703" />
+            <inertia ixx="7.546660762832943e-07" iyy="2.897956135054593e-06" izz="2.308950282712587e-06" ixy="-5.4811155618135886e-08" iyz="5.728461757151568e-11" ixz="-1.8486709111476302e-10" />
+        </inertial>
+        <visual name="ST3215-v6_SG-ZIJI_15_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_SG-ZIJI_15.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="ST3215-v6_SG-ZIJI_15_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_SG-ZIJI_15.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="ST3215-v6_XG-ZIJI_16">
+        <inertial>
+            <origin xyz="-0.012822160956922965 -0.0193102398461097 2.6180774303284646e-07" rpy="0.0 0.0 0.0" />
+            <mass value="0.01821643631857049" />
+            <inertia ixx="1.1073257121876678e-06" iyy="3.993024569191046e-06" izz="3.2619229575401413e-06" ixy="2.9471830600931362e-08" iyz="1.7479205212540967e-11" ixz="-1.0081400842566323e-10" />
+        </inertial>
+        <visual name="ST3215-v6_XG-ZIJI_16_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_XG-ZIJI_16.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="ST3215-v6_XG-ZIJI_16_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_XG-ZIJI_16.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="ST3215-v6_金属舵盘驱动-v2">
+        <inertial>
+            <origin xyz="0.00999999957036338 0.025397496937745467 1.74218074863518e-13" rpy="0.0 0.0 0.0" />
+            <mass value="0.0059458144206551485" />
+            <inertia ixx="1.358459505378238e-07" iyy="2.5750846296324424e-07" izz="1.3584597811925516e-07" ixy="-6.48842026410022e-14" iyz="2.80646137216966e-18" ixz="-4.046251160289272e-19" />
+        </inertial>
+        <visual name="ST3215-v6_金属舵盘驱动-v2_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_金属舵盘驱动-v2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="ST3215-v6_金属舵盘驱动-v2_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_金属舵盘驱动-v2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="ST3215-v6_金属舵盘从动-v2">
+        <inertial>
+            <origin xyz="0.010000000000055223 -0.023016391767442315 -1.429015155635473e-13" rpy="0.0 0.0 0.0" />
+            <mass value="0.004443481253791742" />
+            <inertia ixx="1.0943154192723285e-07" iyy="2.139017742057575e-07" izz="1.0943154196574526e-07" ixy="8.236657673358901e-19" iyz="-2.939629185652255e-19" ixz="4.703795640507285e-19" />
+        </inertial>
+        <visual name="ST3215-v6_金属舵盘从动-v2_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_金属舵盘从动-v2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="ST3215-v6_金属舵盘从动-v2_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_金属舵盘从动-v2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="base_link-v5">
+        <inertial>
+            <origin xyz="1.685950638924157e-07 2.237629093563546e-05 0.0030005870518812713" rpy="0.0 0.0 0.0" />
+            <mass value="0.7642708336375105" />
+            <inertia ixx="0.0010286688035716948" iyy="0.0010296571506133952" izz="0.002053742000212474" ixy="2.9549969485632865e-10" iyz="1.0039495070905946e-11" ixz="-4.9649739363585754e-12" />
+        </inertial>
+        <visual name="base_link-v5_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/base_link-v5.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="base_link-v5_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/base_link-v5.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Bracket-v19">
+        <inertial>
+            <origin xyz="-7.941686586359256e-06 -0.0185800589198974 -0.013141188626941497" rpy="0.0 3.81808956138806e-61 0.0" />
+            <mass value="0.032617193022395415" />
+            <inertia ixx="1.074254503338122e-05" iyy="3.5924067894925146e-06" izz="9.358736950768412e-06" ixy="-1.0465548273062045e-11" iyz="-1.9439120978634555e-08" ixz="-9.069206668743701e-10" />
+        </inertial>
+        <visual name="Bracket-v19_visual">
+            <origin xyz="-0.010009927987058456 -0.03712500484192864 -0.017994484881960062" rpy="1.5713479369508403 1.4091729266542083e-16 1.5707963267948957" />
+            <geometry>
+                <mesh filename="meshes/Bracket-v19.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Bracket-v19_collision">
+            <origin xyz="-0.010009927987058456 -0.03712500484192864 -0.017994484881960062" rpy="1.5713479369508403 1.4091729266542083e-16 1.5707963267948957" />
+            <geometry>
+                <mesh filename="meshes/Bracket-v19.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Bracket-v19">
+        <inertial>
+            <origin xyz="7.0604480785884375e-06 1.7653220556734794e-05 -0.00785881768284325" rpy="0.0 -0.0 0.0" />
+            <mass value="0.032617193022395415" />
+            <inertia ixx="3.592387098402881e-06" iyy="1.0742545612861423e-05" izz="9.358756062382102e-06" ixy="1.7805937051879567e-13" iyz="-1.4359779757964174e-10" ixz="-1.6258346651661632e-08" />
+        </inertial>
+        <visual name="Bracket-v19_visual">
+            <origin xyz="0.01855468371904099 0.010016960871990358 -0.003010235288438814" rpy="-1.5707963267948966 -0.0005516101556356492 3.1415926535897922" />
+            <geometry>
+                <mesh filename="meshes/Bracket-v19.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Bracket-v19_collision">
+            <origin xyz="0.01855468371904099 0.010016960871990358 -0.003010235288438814" rpy="-1.5707963267948966 -0.0005516101556356492 3.1415926535897922" />
+            <geometry>
+                <mesh filename="meshes/Bracket-v19.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="ST3215-v6_ZK_122">
+        <inertial>
+            <origin xyz="-0.012872959021115495 -0.007691042312383875 4.083528206665874e-06" rpy="0.0 0.0 0.0" />
+            <mass value="0.02333262594566815" />
+            <inertia ixx="1.4999637924749987e-06" iyy="5.095506425693369e-06" izz="4.250129261834088e-06" ixy="3.091289032139662e-09" iyz="6.525183306345187e-10" ixz="-1.3873070240839191e-09" />
+        </inertial>
+        <visual name="ST3215-v6_ZK_122_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_ZK_122.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="ST3215-v6_ZK_122_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_ZK_122.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="ST3215-v6_SG-ZIJI_15">
+        <inertial>
+            <origin xyz="-0.011997414779678537 0.001885684187113544 -1.4120169437398066e-06" rpy="0.0 0.0 0.0" />
+            <mass value="0.013957938251507703" />
+            <inertia ixx="7.54666076283297e-07" iyy="2.8979561350546546e-06" izz="2.30895028271264e-06" ixy="-5.481115561812846e-08" iyz="5.728461757073343e-11" ixz="-1.8486709112191547e-10" />
+        </inertial>
+        <visual name="ST3215-v6_SG-ZIJI_15_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_SG-ZIJI_15.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="ST3215-v6_SG-ZIJI_15_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_SG-ZIJI_15.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="ST3215-v6_XG-ZIJI_16">
+        <inertial>
+            <origin xyz="-0.012822160956920755 -0.019310239846109217 2.618077427851912e-07" rpy="0.0 0.0 0.0" />
+            <mass value="0.01821643631857049" />
+            <inertia ixx="1.1073257121863702e-06" iyy="3.993024569191382e-06" izz="3.2619229575407507e-06" ixy="2.9471830600850305e-08" iyz="1.74792052186471e-11" ixz="-1.0081400814827396e-10" />
+        </inertial>
+        <visual name="ST3215-v6_XG-ZIJI_16_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_XG-ZIJI_16.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="ST3215-v6_XG-ZIJI_16_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_XG-ZIJI_16.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="ST3215-v6_金属舵盘驱动-v2">
+        <inertial>
+            <origin xyz="0.009999999570361028 0.025397496937739305 1.7400230561959162e-13" rpy="0.0 0.0 0.0" />
+            <mass value="0.0059458144206551485" />
+            <inertia ixx="1.3584595053777514e-07" iyy="2.575084629630753e-07" izz="1.3584597811980014e-07" ixy="-6.488418956769035e-14" iyz="2.816900152323598e-18" ixz="-5.313609731693637e-19" />
+        </inertial>
+        <visual name="ST3215-v6_金属舵盘驱动-v2_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_金属舵盘驱动-v2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="ST3215-v6_金属舵盘驱动-v2_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_金属舵盘驱动-v2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="ST3215-v6_金属舵盘从动-v2">
+        <inertial>
+            <origin xyz="0.010000000000057307 -0.02301639176744684 -1.432185487119741e-13" rpy="0.0 0.0 0.0" />
+            <mass value="0.004443481253791742" />
+            <inertia ixx="1.0943154192728919e-07" iyy="2.139017742058547e-07" izz="1.0943154196628574e-07" ixy="8.190340855162076e-19" iyz="-2.9490443971666993e-19" ixz="3.7110494710154784e-19" />
+        </inertial>
+        <visual name="ST3215-v6_金属舵盘从动-v2_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_金属舵盘从动-v2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="ST3215-v6_金属舵盘从动-v2_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_金属舵盘从动-v2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Upper-Leg-v5_Rear-Bracket-v4">
+        <inertial>
+            <origin xyz="0.011100185090453789 -0.015212557066623703 1.7033374809629688e-06" rpy="0.0 0.0 0.0" />
+            <mass value="0.053151941776708324" />
+            <inertia ixx="1.4994701558964006e-05" iyy="1.2381289503616867e-05" izz="1.966605139535136e-05" ixy="1.0288415858325567e-06" iyz="1.6392543769102945e-09" ixz="4.351761706150872e-10" />
+        </inertial>
+        <visual name="Upper-Leg-v5_Rear-Bracket-v4_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Upper-Leg-v5_Rear-Bracket-v4.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Upper-Leg-v5_Rear-Bracket-v4_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Upper-Leg-v5_Rear-Bracket-v4.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Upper-Leg-v5_Rear-Bracket-v4">
+        <inertial>
+            <origin xyz="0.011100185090455886 -0.01521255706662619 1.7033374808051631e-06" rpy="0.0 0.0 0.0" />
+            <mass value="0.053151941776708324" />
+            <inertia ixx="1.4994701558970076e-05" iyy="1.2381289503621304e-05" izz="1.9666051395358768e-05" ixy="1.0288415858329635e-06" iyz="1.6392543768454501e-09" ixz="4.3517616978435964e-10" />
+        </inertial>
+        <visual name="Upper-Leg-v5_Rear-Bracket-v4_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Upper-Leg-v5_Rear-Bracket-v4.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Upper-Leg-v5_Rear-Bracket-v4_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Upper-Leg-v5_Rear-Bracket-v4.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="ST3215-v6_ZK_122">
+        <inertial>
+            <origin xyz="-0.01287295902111731 -0.00769104231238516 4.083528206847342e-06" rpy="0.0 0.0 0.0" />
+            <mass value="0.02333262594566815" />
+            <inertia ixx="1.4999637924753921e-06" iyy="5.095506425695442e-06" izz="4.250129261835548e-06" ixy="3.091289032109555e-09" iyz="6.525183306553143e-10" ixz="-1.3873070242444798e-09" />
+        </inertial>
+        <visual name="ST3215-v6_ZK_122_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_ZK_122.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="ST3215-v6_ZK_122_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_ZK_122.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="ST3215-v6_SG-ZIJI_15">
+        <inertial>
+            <origin xyz="-0.011997414779679144 0.0018856841871136652 -1.4120169436699704e-06" rpy="0.0 0.0 0.0" />
+            <mass value="0.013957938251507703" />
+            <inertia ixx="7.546660762833699e-07" iyy="2.897956135055039e-06" izz="2.3089502827132535e-06" ixy="-5.4811155618138916e-08" iyz="5.7284617568833914e-11" ixz="-1.8486709113002515e-10" />
+        </inertial>
+        <visual name="ST3215-v6_SG-ZIJI_15_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_SG-ZIJI_15.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="ST3215-v6_SG-ZIJI_15_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_SG-ZIJI_15.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="ST3215-v6_XG-ZIJI_16">
+        <inertial>
+            <origin xyz="-0.012822160956923602 -0.01931023984611092 2.6180774312170043e-07" rpy="0.0 0.0 0.0" />
+            <mass value="0.01821643631857049" />
+            <inertia ixx="1.1073257121876854e-06" iyy="3.993024569191482e-06" izz="3.261922957541116e-06" ixy="2.9471830600934985e-08" iyz="1.747920520342491e-11" ixz="-1.0081400851087023e-10" />
+        </inertial>
+        <visual name="ST3215-v6_XG-ZIJI_16_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_XG-ZIJI_16.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="ST3215-v6_XG-ZIJI_16_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_XG-ZIJI_16.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="ST3215-v6_金属舵盘驱动-v2">
+        <inertial>
+            <origin xyz="0.009999999570362501 0.02539749693774062 1.741390370660692e-13" rpy="0.0 0.0 0.0" />
+            <mass value="0.0059458144206551485" />
+            <inertia ixx="1.3584595053821671e-07" iyy="2.575084629632007e-07" izz="1.3584597811985234e-07" ixy="-6.488420860157521e-14" iyz="2.8049281726835517e-18" ixz="-4.338432031894153e-19" />
+        </inertial>
+        <visual name="ST3215-v6_金属舵盘驱动-v2_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_金属舵盘驱动-v2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="ST3215-v6_金属舵盘驱动-v2_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_金属舵盘驱动-v2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="ST3215-v6_金属舵盘从动-v2">
+        <inertial>
+            <origin xyz="0.010000000000055744 -0.023016391767443745 -1.4288505274795416e-13" rpy="0.0 0.0 0.0" />
+            <mass value="0.004443481253791742" />
+            <inertia ixx="1.0943154192721237e-07" iyy="2.1390177420570402e-07" izz="1.0943154196582967e-07" ixy="8.230980782891305e-19" iyz="-2.928969816873592e-19" ixz="4.886321314473245e-19" />
+        </inertial>
+        <visual name="ST3215-v6_金属舵盘从动-v2_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_金属舵盘从动-v2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="ST3215-v6_金属舵盘从动-v2_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/ST3215-v6_金属舵盘从动-v2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="Bracket-v19_Rigid-17" type="fixed">
+        <origin xyz="5.370000000000002e-06 -0.018568670000000002 -0.021000010000000006" rpy="-7.511373497358069e-32 7.888609052210118e-31 -1.9360014096874845e-30" />
+        <parent link="Bracket-v19" />
+        <child link="Bracket-v19" />
+    </joint>
+    <joint name="ST3215-v6_XG-ZIJI_16_Rigid-21" type="fixed">
+        <origin xyz="0.007250002717810027 -0.025600000504158997 0.010250002467154217" rpy="1.5804914421083105 -5.347840828628304e-06 1.5713479110263624" />
+        <parent link="ST3215-v6_XG-ZIJI_16" />
+        <child link="Upper-Leg-v5_Rear-Bracket-v4" />
+    </joint>
+    <joint name="ST3215-v6_金属舵盘从动-v2_Revolute-22" type="continuous">
+        <origin xyz="0.009999996248001323 -0.021799995158074507 2.243734653628593e-10" rpy="-3.1415926535897896 -1.490101658915768 3.141592653589773" />
+        <parent link="ST3215-v6_金属舵盘从动-v2" />
+        <child link="Bracket-v19" />
+        <axis xyz="1.9360014096874845e-30 1.0 9.860761315262648e-32" />
+    </joint>
+    <joint name="base_link-v5_Rigid-23" type="fixed">
+        <origin xyz="0.00036488 -0.07012224 0.006001729999999999" rpy="0.0 -0.0 0.0" />
+        <parent link="base_link-v5" />
+        <child link="ST3215-v6_XG-ZIJI_16" />
+    </joint>
+    <joint name="Bracket-v19_Rigid-34" type="fixed">
+        <origin xyz="-0.018580239999999998 1.6959999999999197e-05 -0.020989749999999995" rpy="-1.570796326794897 -1.220051948344529e-31 -1.5707963267948966" />
+        <parent link="Bracket-v19" />
+        <child link="ST3215-v6_金属舵盘从动-v2" />
+    </joint>
+    <joint name="Upper-Leg-v5_Rear-Bracket-v4_Rigid-35" type="fixed">
+        <origin xyz="-0.019199995665373778 -0.0009999957132559546 0.01025000389688807" rpy="-1.561101211481485 -5.347840828664806e-06 -1.570244742563123" />
+        <parent link="Upper-Leg-v5_Rear-Bracket-v4" />
+        <child link="ST3215-v6_SG-ZIJI_15" />
+    </joint>
+    <joint name="ST3215-v6_XG-ZIJI_16_Revolute-2" type="continuous">
+        <origin xyz="-0.02549999627829661 -0.024300004841925495 5.260810820523556e-10" rpy="-3.141592653589793 -1.5707963267948963 0" />
+        <parent link="ST3215-v6_XG-ZIJI_16" />
+        <child link="ST3215-v6_金属舵盘从动-v2" />
+        <axis xyz="-2.5159111269183954e-33 -1.0 0.0" />
+    </joint>
+    <joint name="ST3215-v6_SG-ZIJI_15_Revolute-4" type="continuous">
+        <origin xyz="-0.025499996278296626 0.004899995158074493 5.260811003623619e-10" rpy="-3.141592653589793 -1.5707963267948961 0" />
+        <parent link="ST3215-v6_SG-ZIJI_15" />
+        <child link="ST3215-v6_金属舵盘驱动-v2" />
+        <axis xyz="-1.3732809072836508e-31 -1.0 0.0" />
+    </joint>
+    <joint name="ST3215-v6_XG-ZIJI_16_Revolute-2" type="continuous">
+        <origin xyz="-0.02550000190943967 -0.024299999876220744 8.905423865002149e-10" rpy="-1.5611012114814826 -5.347840828628304e-06 1.5713479110263624" />
+        <parent link="ST3215-v6_XG-ZIJI_16" />
+        <child link="ST3215-v6_金属舵盘从动-v2" />
+        <axis xyz="1.0000000000000002 1.7347234891639426e-18 -0.0005520000000000001" />
+    </joint>
+    <joint name="ST3215-v6_SG-ZIJI_15_Revolute-4" type="continuous">
+        <origin xyz="-0.025499998927756416 0.0049000045678218316 8.632225156901541e-10" rpy="-1.561101211481501 -5.348164244718112e-06 1.5713479110263673" />
+        <parent link="ST3215-v6_SG-ZIJI_15" />
+        <child link="ST3215-v6_金属舵盘驱动-v2" />
+        <axis xyz="1.0 -3.0703744926080186e-25 -0.0005519999999999999" />
+    </joint>
+    <joint name="ST3215-v6_XG-ZIJI_16_Revolute-2" type="continuous">
+        <origin xyz="-0.0254999995176636 -0.02430000331981563 3.928758967042257e-09" rpy="-1.5611012114812923 -5.347842100585873e-06 -1.5702447425631225" />
+        <parent link="ST3215-v6_XG-ZIJI_16" />
+        <child link="ST3215-v6_金属舵盘从动-v2" />
+        <axis xyz="-1.0 -1.734724070933321e-18 0.0005520000000000001" />
+    </joint>
+    <joint name="ST3215-v6_SG-ZIJI_15_Revolute-4" type="continuous">
+        <origin xyz="-0.025499996535991408 0.0049000011242257765 3.957641681040514e-09" rpy="-1.561101211481485 -5.347840828706906e-06 -1.5702447425631234" />
+        <parent link="ST3215-v6_SG-ZIJI_15" />
+        <child link="ST3215-v6_金属舵盘驱动-v2" />
+        <axis xyz="-1.0 1.7347241651379197e-18 0.000552" />
+    </joint>
+</robot>
