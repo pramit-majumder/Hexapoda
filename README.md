@@ -45,7 +45,7 @@ The project integrates CAD modeling, ROS 2/Gazebo simulation, and control system
 ---
 
 ## Team
-Developed and maintained by a **6-member KRS Robotics Team**  
+Developed and maintained by a **6-member team from the KIIT ROBOTICS SOCIETY**  
 
 ---
 
