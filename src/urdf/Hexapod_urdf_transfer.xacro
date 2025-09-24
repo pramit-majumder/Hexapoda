@@ -1,0 +1,416 @@
+<?xml version="1.0" ?>
+<robot name="Hexapod_urdf_transfer" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find Hexapod_urdf_transfer_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find Hexapod_urdf_transfer_description)/urdf/Hexapod_urdf_transfer.trans" />
+<xacro:include filename="$(find Hexapod_urdf_transfer_description)/urdf/Hexapod_urdf_transfer.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="1.685950638924157e-07 2.237629093563546e-05 0.003000587051881271" rpy="0 0 0"/>
+    <mass value="0.7642708336375105"/>
+    <inertia ixx="0.001029" iyy="0.00103" izz="0.002054" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Servo_Body_v2__2__1">
+  <inertial>
+    <origin xyz="0.010251565506738435 -0.020191302124410983 0.016681889716058836" rpy="0 0 0"/>
+    <mass value="0.056857679343396465"/>
+    <inertia ixx="1.4e-05" iyy="7e-06" izz="1.2e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.010267 0.057788 -0.006" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Servo_Body_v2__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.010267 0.057788 -0.006" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Servo_Body_v2__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Right_Horn_v3_1">
+  <inertial>
+    <origin xyz="-1.0943037173784565e-07 4.062781223806988e-07 -0.00010250231462573256" rpy="0 0 0"/>
+    <mass value="0.0059458144206551485"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="1.7e-05 0.090538 -0.0397" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Right_Horn_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="1.7e-05 0.090538 -0.0397" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Right_Horn_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Left_Horn_v4_1">
+  <inertial>
+    <origin xyz="-1.1052608136953517e-07 4.0627812111782013e-07 0.0009163917674599293" rpy="0 0 0"/>
+    <mass value="0.004443481253791211"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="1.7e-05 0.090538 -0.00365" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Left_Horn_v4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="1.7e-05 0.090538 -0.00365" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Left_Horn_v4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Bracket_v19_1">
+  <inertial>
+    <origin xyz="-8.028746492997508e-07 -0.01314078100810713 0.018580054077971173" rpy="0 0 0"/>
+    <mass value="0.032617193022395415"/>
+    <inertia ixx="1.1e-05" iyy="9e-06" izz="4e-06" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="1.7e-05 0.090538 -0.00335" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Bracket_v19_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="1.7e-05 0.090538 -0.00335" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Bracket_v19_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Bracket_v19__1__1">
+  <inertial>
+    <origin xyz="-1.1545609477965347e-05 -0.007858406435299337 1.731134314260016e-05" rpy="0 0 0"/>
+    <mass value="0.032617193022395415"/>
+    <inertia ixx="4e-06" iyy="9e-06" izz="1.1e-05" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.111538 -0.021919" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Bracket_v19__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.111538 -0.021919" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Bracket_v19__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Left_Horn_v4__1__1">
+  <inertial>
+    <origin xyz="-0.0012168832989674465 4.062784720593182e-07 -3.810054252026407e-07" rpy="0 0 0"/>
+    <mass value="0.004443481253791211"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.018569 0.132538 -0.021936" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Left_Horn_v4__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.018569 0.132538 -0.021936" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Left_Horn_v4__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Right_Horn_v3__1__1">
+  <inertial>
+    <origin xyz="0.0014020107831182321 4.073740061394382e-07 -3.810052512515094e-07" rpy="0 0 0"/>
+    <mass value="0.0059458144206551485"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.018431 0.132538 -0.021936" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Right_Horn_v3__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.018431 0.132538 -0.021936" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Right_Horn_v3__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Servo_Body_v2__1__1">
+  <inertial>
+    <origin xyz="-0.019282381247566448 -0.012557885318995793 -2.0570382449278113e-06" rpy="0 0 0"/>
+    <mass value="0.056857679343396465"/>
+    <inertia ixx="1.2e-05" iyy="7e-06" izz="1.4e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.018269 0.132538 -0.021936" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Servo_Body_v2__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.018269 0.132538 -0.021936" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Servo_Body_v2__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Rear_Bracket_v4_1">
+  <inertial>
+    <origin xyz="0.014212065535117674 -0.009599778812158483 0.01024791565709395" rpy="0 0 0"/>
+    <mass value="0.053151941776708324"/>
+    <inertia ixx="1.2e-05" iyy="1.5e-05" izz="2e-05" ixy="1e-06" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.016331 0.161538 -0.011686" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Rear_Bracket_v4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.016331 0.161538 -0.011686" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Rear_Bracket_v4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Upper_Leg_v7_1">
+  <inertial>
+    <origin xyz="-0.1661141297446751 -0.04342259372170318 0.021935618994575044" rpy="0 0 0"/>
+    <mass value="0.03961380887673026"/>
+    <inertia ixx="1.2e-05" iyy="1.2e-05" izz="1.5e-05" ixy="-1e-06" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.165206 0.159115 0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Upper_Leg_v7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.165206 0.159115 0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Upper_Leg_v7_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Rear_Bracket_v4__1__1">
+  <inertial>
+    <origin xyz="0.20490606553511737 -0.07482240863124792 -0.03378367766794385" rpy="0 0 0"/>
+    <mass value="0.053151941776708324"/>
+    <inertia ixx="1.2e-05" iyy="1.5e-05" izz="2e-05" ixy="-1e-06" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.207025 0.159115 -0.055721" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Rear_Bracket_v4__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.207025 0.159115 -0.055721" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Rear_Bracket_v4__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Servo_Body_v2_1">
+  <inertial>
+    <origin xyz="0.015317618752432994 -0.016441302124410667 -0.010248704972604977" rpy="0 0 0"/>
+    <mass value="0.056857679343396465"/>
+    <inertia ixx="1.2e-05" iyy="7e-06" izz="1.4e-05" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.016331 0.243538 -0.032186" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Servo_Body_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.016331 0.243538 -0.032186" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Servo_Body_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Right_Horn_v3__2__1">
+  <inertial>
+    <origin xyz="0.00010201078311747672 4.0737400630597165e-07 -3.810052502141448e-07" rpy="0 0 0"/>
+    <mass value="0.0059458144206551485"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.018031 0.272538 -0.021936" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Right_Horn_v3__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.018031 0.272538 -0.021936" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Right_Horn_v3__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Left_Horn_v4__2__1">
+  <inertial>
+    <origin xyz="-0.0009168832989681422 4.062782968938805e-07 -3.810055999413364e-07" rpy="0 0 0"/>
+    <mass value="0.004443481253791211"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.018019 0.272538 -0.021936" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Left_Horn_v4__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.018019 0.272538 -0.021936" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Hexapod_urdf_transfer_description/meshes/Left_Horn_v4__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rigid 17" type="fixed">
+  <origin xyz="-0.010267 -0.057788 0.006" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Servo_Body_v2__2__1"/>
+</joint>
+
+<joint name="Revolute 18" type="revolute">
+  <origin xyz="0.01025 -0.03275 0.0337" rpy="0 0 0"/>
+  <parent link="Servo_Body_v2__2__1"/>
+  <child link="Right_Horn_v3_1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 19" type="revolute">
+  <origin xyz="0.01025 -0.03275 -0.00235" rpy="0 0 0"/>
+  <parent link="Servo_Body_v2__2__1"/>
+  <child link="Left_Horn_v4_1"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
+  <limit upper="0.0" lower="-3.141593" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rigid 20" type="fixed">
+  <origin xyz="0.0 0.0 -0.0003" rpy="0 0 0"/>
+  <parent link="Left_Horn_v4_1"/>
+  <child link="Bracket_v19_1"/>
+</joint>
+
+<joint name="Rigid 21" type="fixed">
+  <origin xyz="1.7e-05 -0.021 0.018569" rpy="0 0 0"/>
+  <parent link="Bracket_v19_1"/>
+  <child link="Bracket_v19__1__1"/>
+</joint>
+
+<joint name="Rigid 22" type="fixed">
+  <origin xyz="0.018569 -0.021 1.7e-05" rpy="0 0 0"/>
+  <parent link="Bracket_v19__1__1"/>
+  <child link="Left_Horn_v4__1__1"/>
+</joint>
+
+<joint name="Rigid 23" type="fixed">
+  <origin xyz="-0.018431 -0.021 1.7e-05" rpy="0 0 0"/>
+  <parent link="Bracket_v19__1__1"/>
+  <child link="Right_Horn_v3__1__1"/>
+</joint>
+
+<joint name="Revolute 24" type="revolute">
+  <origin xyz="-0.0003 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Left_Horn_v4__1__1"/>
+  <child link="Servo_Body_v2__1__1"/>
+  <axis xyz="1.0 -0.0 0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rigid 25" type="fixed">
+  <origin xyz="-0.0346 -0.029 -0.01025" rpy="0 0 0"/>
+  <parent link="Servo_Body_v2__1__1"/>
+  <child link="Rear_Bracket_v4_1"/>
+</joint>
+
+<joint name="Rigid 26" type="fixed">
+  <origin xyz="0.181537 0.002423 -0.011686" rpy="0 0 0"/>
+  <parent link="Rear_Bracket_v4_1"/>
+  <child link="Upper_Leg_v7_1"/>
+</joint>
+
+<joint name="Rigid 27" type="fixed">
+  <origin xyz="-0.372231 0.0 0.055721" rpy="0 0 0"/>
+  <parent link="Upper_Leg_v7_1"/>
+  <child link="Rear_Bracket_v4__1__1"/>
+</joint>
+
+<joint name="Rigid 28" type="fixed">
+  <origin xyz="0.190694 -0.084423 -0.023535" rpy="0 0 0"/>
+  <parent link="Rear_Bracket_v4__1__1"/>
+  <child link="Servo_Body_v2_1"/>
+</joint>
+
+<joint name="Revolute 29" type="revolute">
+  <origin xyz="-0.0017 -0.029 -0.01025" rpy="0 0 0"/>
+  <parent link="Servo_Body_v2_1"/>
+  <child link="Right_Horn_v3__2__1"/>
+  <axis xyz="1.0 -0.0 0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 31" type="revolute">
+  <origin xyz="0.03435 -0.029 -0.01025" rpy="0 0 0"/>
+  <parent link="Servo_Body_v2_1"/>
+  <child link="Left_Horn_v4__2__1"/>
+  <axis xyz="-1.0 0.0 -0.0"/>
+  <limit upper="4.712389" lower="1.570796" effort="100" velocity="100"/>
+</joint>
+
+</robot>
