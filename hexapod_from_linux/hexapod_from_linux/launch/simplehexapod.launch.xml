@@ -1,6 +1,0 @@
-<!-- <launch>
-    <let name="urdf_path" value="~/ros2_sim/src/hexapod/urdf/Hexapoda.urdf.xacro"/>
-    <node pkg="robot_state_publisher" exec="robot_state_publisher">
-        <param name="robot_description" command="xacro $(var urdf_path)"/>
-    </node>
-</launch> -->
