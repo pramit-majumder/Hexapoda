@@ -1,7 +1,7 @@
 # KRS Hexapod Robot
 
 ## Overview
-This repository contains the design and simulation files for a six-legged robotic platform (**hexapod**) developed by the KRS Robotics Team.  
+This repository contains the design and simulation files for a six-legged robotic platform (**hexapod**) developed by the KRS Embedded Team.  
 The project integrates CAD modeling, ROS 2/Gazebo simulation, and control system development, with plans for hardware implementation using ST3215 digital servos.  
 
 ---
